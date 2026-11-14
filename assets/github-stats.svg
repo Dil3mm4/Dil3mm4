@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" width="1200" height="260" role="img" aria-labelledby="title desc">
+<title id="title">Public GitHub activity statistics</title>
+<desc id="desc">Static self-hosted vector statistics that are regenerated daily by a Python script in this repository.</desc>
+<defs>
+  <linearGradient id="base" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#0B1422"/>
+    <stop offset="1" stop-color="#112339"/>
+  </linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#6DE4D7"/>
+    <stop offset="1" stop-color="#91AFFF"/>
+  </linearGradient>
+  <radialGradient id="halo"><stop offset="0" stop-color="#6DE4D7" stop-opacity=".12"/>
+    <stop offset="1" stop-color="#6DE4D7" stop-opacity="0"/>
+  </radialGradient>
+  <pattern id="mesh" width="32" height="32" patternUnits="userSpaceOnUse">
+    <path d="M32 0H0V32" fill="none" stroke="#B3CADC" stroke-opacity=".055" stroke-width="1"/>
+  </pattern>
+</defs>
+<rect x="1.5" y="1.5" width="1197" height="257" rx="23" fill="url(#base)" stroke="#30475E" stroke-width="2"/>
+<rect x="2.5" y="2.5" width="1195" height="255" rx="22" fill="url(#mesh)"/>
+<path d="M27 43V218" stroke="url(#accent)" stroke-width="3" stroke-linecap="round"/>
+<path d="M1124 18h47v19M35 238h45" fill="none" stroke="#6DE4D7" stroke-opacity=".4" stroke-width="1.6"/>
+<text x="53" y="53" font-family="Consolas,Menlo,monospace" font-size="16" fill="#EFF6FF" font-weight="750" text-anchor="start" letter-spacing="1.15">GITHUB / PUBLIC ACTIVITY</text>
+<circle cx="1093" cy="47" r="4" fill="#91AFFF"/>
+<text x="1137" y="52" font-family="Consolas,Menlo,monospace" font-size="11" fill="#8DA6BE" font-weight="700" text-anchor="end" >FIRST SYNC</text>
+<path d="M54 72H1146" stroke="#30475E"/>
+<rect x="53" y="89" width="208" height="112" rx="12" fill="#13263B" stroke="#30475E"/>
+<rect x="65" y="103" width="2" height="13" rx="1" fill="#6DE4D7"/>
+<text x="76" y="114" font-family="Consolas,Menlo,monospace" font-size="10" fill="#8DA6BE" font-weight="700" text-anchor="start" letter-spacing=".3">PUBLIC COMMITS</text>
+<text x="70" y="159" font-family="Arial,Helvetica,sans-serif" font-size="32" fill="#8DA6BE" font-weight="750" text-anchor="start" >—</text>
+<text x="70" y="184" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#8DA6BE" font-weight="400" text-anchor="start" >Search-indexed</text>
+<rect x="275" y="89" width="208" height="112" rx="12" fill="#13263B" stroke="#30475E"/>
+<rect x="287" y="103" width="2" height="13" rx="1" fill="#91AFFF"/>
+<text x="298" y="114" font-family="Consolas,Menlo,monospace" font-size="10" fill="#8DA6BE" font-weight="700" text-anchor="start" letter-spacing=".3">PUBLIC REPOS</text>
+<text x="292" y="159" font-family="Arial,Helvetica,sans-serif" font-size="32" fill="#8DA6BE" font-weight="750" text-anchor="start" >—</text>
+<text x="292" y="184" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#8DA6BE" font-weight="400" text-anchor="start" >Owned repositories</text>
+<rect x="497" y="89" width="208" height="112" rx="12" fill="#13263B" stroke="#30475E"/>
+<rect x="509" y="103" width="2" height="13" rx="1" fill="#91AFFF"/>
+<text x="520" y="114" font-family="Consolas,Menlo,monospace" font-size="10" fill="#8DA6BE" font-weight="700" text-anchor="start" letter-spacing=".3">STARS RECEIVED</text>
+<text x="514" y="159" font-family="Arial,Helvetica,sans-serif" font-size="32" fill="#8DA6BE" font-weight="750" text-anchor="start" >—</text>
+<text x="514" y="184" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#8DA6BE" font-weight="400" text-anchor="start" >Across public repos</text>
+<rect x="719" y="89" width="208" height="112" rx="12" fill="#13263B" stroke="#30475E"/>
+<rect x="731" y="103" width="2" height="13" rx="1" fill="#6DE4D7"/>
+<text x="742" y="114" font-family="Consolas,Menlo,monospace" font-size="10" fill="#8DA6BE" font-weight="700" text-anchor="start" letter-spacing=".3">PR MERGE RATE</text>
+<text x="736" y="159" font-family="Arial,Helvetica,sans-serif" font-size="32" fill="#8DA6BE" font-weight="750" text-anchor="start" >—</text>
+<text x="736" y="184" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#8DA6BE" font-weight="400" text-anchor="start" >Authored pull requests</text>
+<rect x="941" y="89" width="208" height="112" rx="12" fill="#13263B" stroke="#30475E"/>
+<rect x="953" y="103" width="2" height="13" rx="1" fill="#91AFFF"/>
+<text x="964" y="114" font-family="Consolas,Menlo,monospace" font-size="10" fill="#8DA6BE" font-weight="700" text-anchor="start" letter-spacing=".3">PRS REVIEWED</text>
+<text x="958" y="159" font-family="Arial,Helvetica,sans-serif" font-size="32" fill="#8DA6BE" font-weight="750" text-anchor="start" >—</text>
+<text x="958" y="184" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#8DA6BE" font-weight="400" text-anchor="start" >Public contributions</text>
+<text x="55" y="232" font-family="Consolas,Menlo,monospace" font-size="10" fill="#8DA6BE" font-weight="600" text-anchor="start" >PUBLIC REPOSITORIES &amp; SEARCH-INDEXED ACTIVITY</text>
+<text x="1142" y="232" font-family="Consolas,Menlo,monospace" font-size="10" fill="#91AFFF" font-weight="600" text-anchor="end" >RUN THE INCLUDED WORKFLOW TO POPULATE NUMBERS</text>
+</svg>

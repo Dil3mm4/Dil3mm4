@@ -1,0 +1,38 @@
+name: Update profile stats
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 6 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      # Public repo, so native git is sufficient: no external checkout action.
+      - name: Clone profile repository
+        run: git clone --depth=1 "https://github.com/${GITHUB_REPOSITORY}.git" .
+
+      - name: Render fresh self-hosted stats
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/update_stats.py --login dil3mm4
+
+      - name: Commit generated SVG if changed
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          if git diff --quiet -- assets/github-stats.svg; then
+            echo 'No changes to commit.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/github-stats.svg
+          git commit -m 'chore: refresh public GitHub stats'
+          auth=$(printf 'x-access-token:%s' "$GITHUB_TOKEN" | base64 -w0)
+          git -c "http.https://github.com/.extraheader=AUTHORIZATION: basic $auth" push origin "HEAD:${GITHUB_REF_NAME}"

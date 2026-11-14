@@ -1,2 +1,4 @@
-[![Francesco "Dil3mm4" Manzo's Github Stats](https://github-readme-stats.vercel.app/api?username=dil3mm4&count_private=true&show_icons=true&theme=dracula&include_all_commits=true&line_height=30&hide_rank=true
-)](https://github.com/Dil3mm4)
+<div align="center">
+  <img src="./assets/android-platform-card.svg" width="100%" alt="Francesco Dil3mm4 Manzo | Android platform engineer, technical lead" />
+  <img src="./assets/github-stats.svg" width="100%" alt="GitHub public commits, repositories, stars, pull request merge rate and reviewed pull requests" />
+</div>
